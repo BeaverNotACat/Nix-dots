@@ -63,7 +63,9 @@
           package = pkgs.noto-fonts-emoji;
           name = "Noto Color Emoji";
         };
+
       };
+      targets.zen-browser.profileNames = [ username ];
     };
   };
 }

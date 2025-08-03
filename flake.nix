@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
+      url = "github:nixos/nixpkgs/nixos-25.05";
     };
 
     lanzaboote = {
@@ -58,7 +58,8 @@
               hostName = "ThinkPadX13S";
               type = "laptop";
               inherit system;
-            } // inputs;
+            }
+            // inputs;
             modules = [ ./. ];
           };
       }; # nixosConfigurations end
