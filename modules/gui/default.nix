@@ -9,6 +9,6 @@
     ./waybar
     ./obsidian
     ./browsers
-    ./messagers
+    ./messengers
   ];
 }
