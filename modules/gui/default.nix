@@ -8,9 +8,7 @@
     ./walker
     ./waybar
     ./obsidian
-    ./firefox
-    ./chromium
-    ./zen-browser
-    ./telegram
+    ./browsers
+    ./messagers
   ];
 }
