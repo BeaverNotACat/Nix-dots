@@ -20,7 +20,7 @@
       networks = {
         "Beavers hotspot".pskRaw = "ext:BeaversHotspotPSK";
         "BeaversWiFi".pskRaw = "ext:BeaversWiFiPSK";
-        "Nyatspot".pskRaw = "ext:NyatspotPSK";
+        "Nyaspot".pskRaw = "ext:NyatspotPSK";
         "YOTA-0F0B".psk = "L707L7EAG9T";
         "DVFU-STUDENTS".auth = ''
           key_mgmt=WPA-EAP

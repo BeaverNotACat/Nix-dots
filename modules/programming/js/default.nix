@@ -7,6 +7,7 @@
 
       # Editor tools
       nodePackages.typescript-language-server
+      vscode-langservers-extracted
     ];
   };
 }

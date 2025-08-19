@@ -44,41 +44,40 @@ in
           ", xf86MonBrightnessUp, exec, brightnessctl s 5%+"
           ", xf86MonBrightnessDown, exec, brightnessctl s 5%-"
         ];
-        bind =
-          [
-            "$mainMod, BACKSPACE, exit, "
-            "$mainMod, SPACE, exec, walker"
-            "$mainMod, ESCAPE, exec, hyprlock"
-            "$mainMod, S, exec, kitty"
-            "$mainMod, D, exec, firefox"
-            ", Print, exec, grim - | wl-copy --type=image/png"
-            "$mainMod, Print, exec, slurp | grim -g - - | wl-copy --type=image/png"
+        bind = [
+          "$mainMod, BACKSPACE, exit, "
+          "$mainMod, SPACE, exec, walker"
+          "$mainMod, ESCAPE, exec, hyprlock"
+          "$mainMod, S, exec, kitty"
+          "$mainMod, D, exec, zen"
+          ", Print, exec, grim - | wl-copy --type=image/png"
+          "$mainMod, Print, exec, slurp | grim -g - - | wl-copy --type=image/png"
 
-            "$mainMod, R, killactive,"
-            "$mainMod, F, fullscreen,"
-            "$mainMod, V, togglefloating,"
-            "$mainMod, C, pin,"
+          "$mainMod, R, killactive,"
+          "$mainMod, F, fullscreen,"
+          "$mainMod, V, togglefloating,"
+          "$mainMod, C, pin,"
 
-            "$mainMod, H, movefocus, l"
-            "$mainMod, L, movefocus, r"
-            "$mainMod, K, movefocus, u"
-            "$mainMod, J, movefocus, d"
-          ]
-          ++ (
-            # workspaces: binds $mod + [shift +] {0..9} to [move to] workspace {1..10}
-            builtins.concatLists (
-              builtins.genList (
-                key:
-                let
-                  workspace = if key != 0 then key else 10;
-                in
-                [
-                  "$mainMod, ${toString key}, workspace, ${toString workspace}"
-                  "$mainMod SHIFT, ${toString key}, movetoworkspace, ${toString workspace}"
-                ]
-              ) 10
-            )
-          );
+          "$mainMod, H, movefocus, l"
+          "$mainMod, L, movefocus, r"
+          "$mainMod, K, movefocus, u"
+          "$mainMod, J, movefocus, d"
+        ]
+        ++ (
+          # workspaces: binds $mod + [shift +] {0..9} to [move to] workspace {1..10}
+          builtins.concatLists (
+            builtins.genList (
+              key:
+              let
+                workspace = if key != 0 then key else 10;
+              in
+              [
+                "$mainMod, ${toString key}, workspace, ${toString workspace}"
+                "$mainMod SHIFT, ${toString key}, movetoworkspace, ${toString workspace}"
+              ]
+            ) 10
+          )
+        );
         gestures = {
           workspace_swipe = true;
           workspace_swipe_create_new = false;
