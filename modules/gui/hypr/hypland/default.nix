@@ -22,7 +22,7 @@ in
         exec-once = "${exec_once_script}/bin/start";
         monitor = [
           "eDP-1,prefered,1920x0,1"
-          "HDMI-A-1,prefered,0x0,1"
+          "DP-2,prefered,0x0,1"
         ];
         input = {
           kb_layout = "us,ru";

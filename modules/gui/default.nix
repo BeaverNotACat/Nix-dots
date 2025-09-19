@@ -10,5 +10,6 @@
     ./obsidian
     ./browsers
     ./messengers
+    ./office
   ];
 }

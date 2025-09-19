@@ -1,6 +1,6 @@
 {
   imports = [
     ./proxychains
-    ./shadowsocks
+    ./xray
   ];
 }
