@@ -3,11 +3,13 @@
   imports = [
     x13s.nixosModules.default
     {
-      nixos-x13s.enable = true;
+      nixos-x13s = {
+        kernel = "mainline";
+        enable = true;
+        bluetoothMac = "6c:1f:f7:00:30:e2";
+        wifiMac = "6c:1f:f7:00:30:e2";
+      };
       nixpkgs.config.allowUnfree = true;
-      nixos-x13s.kernel = "mainline";
-      # bluetoothMac = "F4-A8-0D-F5-5B-64";
-      # wifiMac = "F4-A8-0D-F5-5B-64";
     }
   ];
 }

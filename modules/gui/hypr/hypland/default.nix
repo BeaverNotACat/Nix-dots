@@ -78,10 +78,11 @@ in
             ) 10
           )
         );
-        gestures = {
-          workspace_swipe = true;
-          workspace_swipe_create_new = false;
-        };
+        gesture = [
+          "3, horizontal, workspace"
+          "3, vertical, fullscreen"
+          "4, down, close"
+        ];
         animations = {
           enabled = "yes";
         };

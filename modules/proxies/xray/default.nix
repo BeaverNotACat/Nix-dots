@@ -7,7 +7,7 @@
 {
   age.secrets.config = {
     file = ./config.json.age;
-    path = "/run/agenix/config.json";
+    path = "/etc/agenix-config.json";
     owner = username;
   };
 

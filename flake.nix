@@ -3,6 +3,9 @@
 
   inputs = {
     nixpkgs = {
+      url = "github:nixos/nixpkgs/nixos-unstable";
+    };
+    stable-nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-25.05";
     };
 
@@ -13,7 +16,7 @@
 
     agenix = {
       url = "github:ryantm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
       inputs.darwin.follows = "";
     };
 
