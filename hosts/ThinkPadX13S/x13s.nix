@@ -6,8 +6,8 @@
       nixos-x13s = {
         kernel = "mainline";
         enable = true;
-        bluetoothMac = "6c:1f:f7:00:30:e2";
-        wifiMac = "6c:1f:f7:00:30:e2";
+        bluetoothMac = "f3:f0:05:05:37:00"; # FEFOO SOSET
+        wifiMac = "f3:f0:05:05:37:00"; # FEFOO SOSET
       };
       nixpkgs.config.allowUnfree = true;
     }

@@ -21,7 +21,7 @@
     };
 
     x13s = {
-      url = "github:BrainWart/x13s-nixos";
+      url = "github:BeaverNotACat/x13s-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
