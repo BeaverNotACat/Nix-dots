@@ -683,11 +683,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1760599275,
-        "narHash": "sha256-ugWBJkrCVTlRIXNEY4zS4rrBDw/x2wANxEBBeK5PRU4=",
+        "lastModified": 1760619616,
+        "narHash": "sha256-GWHckkuOPpvDj6xR8ktlaFe04ZKqnDIELF2sOMNZhLo=",
         "owner": "abenz1267",
         "repo": "walker",
-        "rev": "40896f5f8572e7cad07ea3cdefdb92100ea6f1f8",
+        "rev": "693709302aefe2e4f44c9c06bf92ceea98af4bf8",
         "type": "github"
       },
       "original": {
@@ -705,11 +705,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1760616200,
-        "narHash": "sha256-RkYqj+JDgSODW0v0GOMMn8IaNYyffzzQfnuQIcMyguk=",
+        "lastModified": 1760621687,
+        "narHash": "sha256-DKRFFZlUK8MmfqoG2gyo5TvJL3/ENDJVGZ9ZN0Ztlfc=",
         "owner": "BeaverNotACat",
         "repo": "x13s-nixos",
-        "rev": "cc8a37b30fae0fb6103240e62351dcba64790b4c",
+        "rev": "3d4e0c01a5d8f713cf947a4d5c68e978c9b06dac",
         "type": "github"
       },
       "original": {
