@@ -3,25 +3,17 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
-    };
-    stable-nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-25.05";
-    };
-
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     agenix = {
       url = "github:ryantm/agenix";
-      # inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
       inputs.darwin.follows = "";
     };
 
     x13s = {
-      url = "github:BeaverNotACat/x13s-nixos";
+      url = "github:BrainWart/x13s-nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -35,10 +27,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    walker = {
-      url = "github:abenz1267/walker";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    walker.url = "github:abenz1267/walker";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

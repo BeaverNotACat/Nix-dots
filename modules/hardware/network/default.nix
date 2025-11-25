@@ -1,11 +1,12 @@
-{ config, ... }:
+{ config, hostName, ... }:
 {
   age.secrets.secrets = {
     file = ./secrets.age;
   };
 
   networking = {
-    useDHCP = true;
+    hostName = hostName;
+
     wireless = {
       enable = true;
       userControlled.enable = true;

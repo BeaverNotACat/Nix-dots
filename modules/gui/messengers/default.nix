@@ -3,7 +3,6 @@
   home-manager.users.${username} = _: {
     home.packages = with pkgs; [
       telegram-desktop
-      element-desktop
     ];
   };
 }

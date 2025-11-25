@@ -4,9 +4,11 @@
     programs.git = {
       enable = true;
       lfs.enable = true;
-      userName = "BeaverNotACat";
-      userEmail = "beavernotacat@gmail.com";
-      extraConfig = {
+      settings = {
+        user = {
+          name = "BeaverNotACat";
+          email = "beavernotacat@gmail.com";
+        };
         push = {
           autoSetupRemote = true;
         };

@@ -2,12 +2,6 @@
   nix = {
     optimise.automatic = true;
 
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
-
     settings = {
       experimental-features = [
         "nix-command"
@@ -18,7 +12,13 @@
     };
   };
 
-  programs.nix-ld.enable = true;
+  programs = {
+    nix-ld.enable = true;
+    nh = {
+      enable = true;
+      clean.enable = true;
+    };
+  };
 
   system.stateVersion = "24.05";
 }
