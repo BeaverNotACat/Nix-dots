@@ -1,9 +1,9 @@
 {
-  description = "BeaverNotACat's config for ";
+  description = "BeaverNotACat's config";
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-25.05";
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
 
     agenix = {
@@ -13,7 +13,7 @@
     };
 
     x13s = {
-      url = "github:BrainWart/x13s-nixos";
+      url = "github:BeaverNotACat/x13s-nixos/update-inputs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

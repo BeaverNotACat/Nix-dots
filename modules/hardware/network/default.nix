@@ -18,6 +18,7 @@
         "Beavers hotspot".pskRaw = "ext:BeaversHotspotPSK";
         "BeaversWiFi".pskRaw = "ext:BeaversWiFiPSK";
         "Nyaspot".pskRaw = "ext:NyatspotPSK";
+        "Kiona1-5G".psk = "Sokroma1";
         "DVFU-STUDENTS".auth = ''
           key_mgmt=WPA-EAP
           eap=PEAP

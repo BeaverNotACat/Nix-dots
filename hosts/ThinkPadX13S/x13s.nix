@@ -12,4 +12,8 @@
       nixpkgs.config.allowUnfree = true;
     }
   ];
+
+  # SLows pc startup and currently not supported
+  systemd.tpm2.enable = false;
+  boot.initrd.systemd.tpm2.enable = false;
 }
