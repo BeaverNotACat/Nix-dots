@@ -1,7 +1,13 @@
-{ config, hostName, ... }:
+{
+  config,
+  hostName,
+  username,
+  ...
+}:
 {
   age.secrets.secrets = {
     file = ./secrets.age;
+    owner = "root";
   };
 
   networking = {
