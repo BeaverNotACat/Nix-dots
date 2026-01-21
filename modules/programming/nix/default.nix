@@ -4,7 +4,7 @@
     home.packages = with pkgs; [
       # Editor tools
       nil
-      nixfmt-rfc-style
+      nixfmt
     ];
   };
 }

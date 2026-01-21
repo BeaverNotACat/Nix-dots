@@ -7,7 +7,7 @@
 {
   age.secrets.secrets = {
     file = ./secrets.age;
-    owner = "root";
+    owner = "wpa_supplicant";
   };
 
   networking = {
