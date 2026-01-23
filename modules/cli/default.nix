@@ -1,7 +1,7 @@
 {
   imports = [
     ./top
-    ./busybox
+    ./tree
     ./vim
   ];
 }
