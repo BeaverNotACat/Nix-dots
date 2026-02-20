@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   nix = {
     optimise.automatic = true;
@@ -13,7 +14,13 @@
   };
 
   programs = {
-    nix-ld.enable = true;
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        zlib
+        libgcc
+      ];
+    };
     nh = {
       enable = true;
       clean.enable = true;
