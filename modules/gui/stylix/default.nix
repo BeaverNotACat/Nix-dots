@@ -25,6 +25,7 @@
     imports = [ stylix.homeModules.stylix ];
     stylix = {
       enable = true;
+      polarity = "dark";
 
       targets.hyprpaper.enable = lib.mkForce false;
 
