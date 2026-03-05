@@ -1,5 +1,6 @@
 { username, ... }:
 {
+  home.sessionVariables.EDITOR = "hx";
   home-manager.users.${username} = _: {
     programs.helix = {
       enable = true;
