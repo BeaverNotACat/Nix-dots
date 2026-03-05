@@ -1,9 +1,9 @@
 { username, ... }:
 {
-  home.sessionVariables.EDITOR = "hx";
   home-manager.users.${username} = _: {
     programs.helix = {
       enable = true;
+      defaultEditor = true;
       settings = {
         editor = {
           auto-save = true;
