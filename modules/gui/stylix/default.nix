@@ -18,8 +18,10 @@
 
   home-manager.users.${username} = _: {
     home.packages = with pkgs; [
+      # noto-fonts
       dejavu_fonts
       nerd-fonts.jetbrains-mono
+      nerd-fonts.noto
     ];
 
     imports = [ stylix.homeModules.stylix ];

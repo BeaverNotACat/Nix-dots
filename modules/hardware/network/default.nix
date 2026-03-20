@@ -15,7 +15,7 @@
 
     wireless = {
       enable = true;
-      userControlled.enable = true;
+      userControlled = true;
 
       allowAuxiliaryImperativeNetworks = true;
       secretsFile = config.age.secrets.secrets.path;
