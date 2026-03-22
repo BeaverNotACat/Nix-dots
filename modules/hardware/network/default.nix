@@ -1,7 +1,6 @@
 {
   config,
   hostName,
-  username,
   ...
 }:
 {
@@ -12,6 +11,7 @@
 
   networking = {
     hostName = hostName;
+    useNetworkd = true;
 
     wireless = {
       enable = true;

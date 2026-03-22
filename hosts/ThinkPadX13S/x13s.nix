@@ -6,14 +6,14 @@
       nixos-x13s = {
         kernel = "mainline";
         enable = true;
-        bluetoothMac = "53:28:11:7B:07:A2";
-        wifiMac = "00:03:7f:12:ed:93";
+        bluetoothMac = "F4:A8:0D:30:9F:97";
+        wifiMac = "06:A8:0D:F5:5B:64";
       };
       nixpkgs.config.allowUnfree = true;
     }
   ];
 
-  # SLows pc startup and currently not supported
+  # TPM2 Is unsupported and slows startup
   systemd.tpm2.enable = false;
   boot.initrd.systemd.tpm2.enable = false;
 }

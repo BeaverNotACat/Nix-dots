@@ -9,5 +9,6 @@
     ./trim
     ./fingerprint
     ./tlp
+    ./tpm2
   ];
 }
