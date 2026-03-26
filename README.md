@@ -16,9 +16,9 @@ List in priority order
 - [X] Make wifi passwords secure with agenix
 - [X] Move from mako
 - [X] Add  greetd or analog
-- [ ] Contribute to X13s module with fixes of bluetooth, wifi and evaluation warnings
+- [X] Contribute to X13s module with fixes of bluetooth, wifi and evaluation warnings
 - [ ] Better manage system-wide and per-user packages
-- [ ] (Maybe) Try hyprpanel 
+- [ ] (Maybe) Try ~~hyprpanel~~ eww
 - [X] Add styles to walker
 - [ ] Add vesktop
 - [ ] Configure hyprlock
