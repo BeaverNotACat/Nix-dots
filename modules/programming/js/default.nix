@@ -6,7 +6,7 @@
       bun
 
       # Editor tools
-      nodePackages.typescript-language-server
+      typescript-language-server
       vscode-langservers-extracted
     ];
   };

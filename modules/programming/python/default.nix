@@ -4,8 +4,6 @@
     home.packages = with pkgs; [
       python314
       uv
-      rye
-      poetry
 
       # Editor tools
       pyright
