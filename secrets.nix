@@ -5,6 +5,5 @@ let
 in
 {
   "modules/hardware/network/secrets.age".publicKeys = keys;
-  "modules/proxies/xray/config.json.age".publicKeys = keys;
-
+  "modules/proxies/hysteria/config.yaml.age".publicKeys = keys;
 }

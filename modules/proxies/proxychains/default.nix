@@ -3,7 +3,7 @@
     enable = true;
     proxyDNS = true;
 
-    proxies.shadowsocks = {
+    proxies.default = {
       enable = true;
       type = "socks5";
       host = "127.0.0.1";
