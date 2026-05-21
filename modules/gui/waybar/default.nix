@@ -12,15 +12,24 @@
           layer = "top";
           position = "top";
 
+          modules-left = [
+            "network"
+          ];
           modules-center = [ "clock" ];
-          modules-left = [ "network" ];
           modules-right = [
+            "hyprland/language"
             "pulseaudio"
             "backlight"
             "memory"
             "cpu"
             "battery"
           ];
+          "hyprland/language" = {
+            "format" = "󰌌 {}";
+            "format-ru" = "RU";
+            "on-click" = "hyprctl switchxkblayout hid-over-i2c-04f3:000d-keyboard next";
+            "format-en" = "EN";
+          };
 
           "battery" = {
             "format" = "{icon}  {capacity}%";
