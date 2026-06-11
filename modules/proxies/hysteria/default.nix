@@ -23,6 +23,8 @@
       Service = {
         ExecStart = "${pkgs.hysteria}/bin/hysteria -c ${config.age.secrets.config.path}";
         ExecStop = "${pkgs.toybox}/bin/killall hysteria";
+        Restart = "on-failure";
+        RestartSec = "10s";
       };
     };
   };
