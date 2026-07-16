@@ -1,6 +1,7 @@
 {
   imports = [
     ./docker
+    ./elixir
     ./helix
     ./visual-studio-code
     ./python

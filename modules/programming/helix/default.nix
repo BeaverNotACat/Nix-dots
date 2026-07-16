@@ -42,7 +42,7 @@
               "pyright"
               "ruff"
             ];
-            formatter.command = "ruff format";
+            # formatter.command = "ruff format";
           }
           {
             name = "nix";

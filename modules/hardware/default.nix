@@ -2,6 +2,7 @@
   imports = [
     ./bluetooth
     ./brightness
+    ./cups
     ./video
     ./network
     ./audio
