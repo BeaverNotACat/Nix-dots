@@ -16,6 +16,7 @@ in
   home-manager.users.${username} = _: {
     wayland.windowManager.hyprland = {
       enable = true;
+      configType = "hyprlang";
 
       settings = {
         "$mainMod" = "SUPER";

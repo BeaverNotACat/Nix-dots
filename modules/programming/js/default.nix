@@ -3,7 +3,7 @@
   home-manager.users.${username} = _: {
     home.packages = with pkgs; [
       nodejs
-      bun
+      deno
 
       # Editor tools
       typescript-language-server
