@@ -1,10 +1,10 @@
-{ x13s, ... }:
+{ x13s, pkgs, ... }:
 {
   imports = [
     x13s.nixosModules.default
     {
       nixos-x13s = {
-        kernel = "mainline";
+        kernel = pkgs.linux; # linux_latest causes bootloop
         enable = true;
         bluetoothMac = "F4:A8:0D:30:9F:97";
         wifiMac = "06:A8:0D:F5:5B:64";

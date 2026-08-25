@@ -39,10 +39,10 @@
             name = "python";
             auto-format = true;
             language-servers = [
-              "pyright"
+              "basedpyright"
               "ruff"
             ];
-            # formatter.command = "ruff format";
+            formatter.command = "ruff format";
           }
           {
             name = "nix";

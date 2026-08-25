@@ -6,7 +6,7 @@
       uv
 
       # Editor tools
-      pyright
+      basedpyright
       ruff
     ];
   };
