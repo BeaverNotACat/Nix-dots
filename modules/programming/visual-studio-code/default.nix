@@ -3,9 +3,6 @@
   home-manager.users.${username} = _: {
 
     nixpkgs.config.allowUnfree = true;
-    home.packages = [
-      pkgs.code-cursor
-    ];
     programs.vscode = {
       enable = true;
       profiles.default.extensions = with pkgs.vscode-extensions; [

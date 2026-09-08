@@ -1,5 +1,6 @@
 {
   imports = [
+    ./agent
     ./docker
     ./elixir
     ./helix
