@@ -6,8 +6,11 @@
       lfs.enable = true;
       settings = {
         user = {
-          name = "BeaverNotACat";
-          email = "beavernotacat@gmail.com";
+          name = "BeaverNotACat"; # TODO: make cutomisable
+          email = "beavernotacat@gmail.com"; # TODO
+        };
+        config = {
+          core.editor = "hx";
         };
         push = {
           autoSetupRemote = true;

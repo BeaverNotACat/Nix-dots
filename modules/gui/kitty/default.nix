@@ -5,6 +5,9 @@
     programs.kitty = {
       enable = true;
       shellIntegration.enableFishIntegration = true;
+      settings = {
+        new_tab_with_cwd = 1;
+      };
       extraConfig = ''
         symbol_map U+2610-U+2612,U+2713-U+2718 DejaVu Sans Mono
       '';
