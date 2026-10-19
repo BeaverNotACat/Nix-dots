@@ -10,6 +10,8 @@
     ./obsidian
     ./browsers
     ./messengers
+    ./mpv
+    ./nemo
     ./office
   ];
 }

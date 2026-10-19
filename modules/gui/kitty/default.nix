@@ -4,9 +4,13 @@
     home.packages = with pkgs; [ imagemagick ]; # icat
     programs.kitty = {
       enable = true;
-      shellIntegration.enableFishIntegration = true;
+      shellIntegration = {
+        enableFishIntegration = true;
+      };
       settings = {
-        new_window_with_cwd = 1;
+        shell = "fish";
+        new_window_with_cwd = "yes";
+        remember_window_size = "no";
       };
       extraConfig = ''
         symbol_map U+2610-U+2612,U+2713-U+2718 DejaVu Sans Mono
